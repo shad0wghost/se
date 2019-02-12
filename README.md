@@ -10,8 +10,8 @@ Navigate to `/var/www/html/se/admin` and execute the tools with `php <toolname>`
 
 If you need more information on how the pollers work navigate to `/var/www/html/se/pollers` and execute the tools via `php <toolname>` the debug output should give you enough to figure out what is needed.
 
-All tools requier 3 arguments to be passed to the script. 
+All tools requiere 3 arguments to be passed to the script. 
 
-example `php smb 127.0.0.1 administrator password`
+Example: `php smb 127.0.0.1 administrator password`
 
 

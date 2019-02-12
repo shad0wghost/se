@@ -1,4 +1,4 @@
-**To install:** Clone to /var/www/html and run install.sh WHEN PROMPTED Selected "apache"
+**To install:** Clone to /var/www/html and run python install.py WHEN PROMPTED Selected "apache"
 
 This is a service-testing engine used for scoring the uptime of various services (ssh, pop3, mysql, http/https, ftp & dns) that may be encountered in a CCDC competition.
 Deploy on a LAMP stack, modify host, user, and pass in sql.php then run and remove setup.php to initialize mysql databases and check for dependencies.

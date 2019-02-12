@@ -4,7 +4,7 @@
 $SERVER = $_SERVER['argv'][1];
 $USER = $_SERVER['argv'][2]; 
 $PASSWORD = $_SERVER['argv'][3];
-
+$EXPECTED = "SUCCESS";
 // Try to get the IP - Kill if takes longer than 3 seconds
 $output = exec("python ../resources/ssh.py $SERVER -u $USER -P 22 -p $PASSWORD & sleep 2; kill $!");
 

@@ -1,0 +1,26 @@
+#!/usr/bin/php
+
+<?php
+$SERVER = $_SERVER['argv'][1];
+$USER = $_SERVER['argv'][2];
+$PASS = $_SERVER['argv'][3];
+
+// Attempt to connect to the server
+$output = POP3($SERVER,$USER,$PASS);
+print $output;
+
+function POP3($server,$user,$pass,$folder="INBOX",$ssl=false)
+{ 
+	imap_timeout(IMAP_READTIMEOUT, 2); 
+	$ssl=($ssl==false)?"/novalidate-cert":""; 
+    if (imap_open("{"."$server:110/pop3$ssl"."}$folder",$user,$pass))
+	{
+		return "SUCCESS";
+	}
+	else
+	{	
+		return "FAILURE";
+	}
+}
+
+?> 

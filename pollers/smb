@@ -1,0 +1,19 @@
+#!/usr/bin/php
+
+<?php
+$SERVER = $_SERVER['argv'][1];
+$USER = $_SERVER['argv'][2]; 
+$PASSWORD = $_SERVER['argv'][3];
+$EXPECTED = "tdis successful";
+
+// Try to get the IP - Kill if takes longer than 3 seconds
+$output = exec("smbclient -U $USER //$SERVER/NETLOGON $PASSWORD -c 'tdis'");
+
+print "Output was: $output\n";
+print "Expected was: $EXPECTED\n";
+
+if ($output == $EXPECTED)
+{ print "SUCCESS"; }
+else
+{ print "FAILURE"; }
+?>

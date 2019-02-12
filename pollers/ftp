@@ -1,0 +1,27 @@
+#!/usr/bin/php
+
+<?php
+$SERVER = $_SERVER['argv'][1];
+$USER = $_SERVER['argv'][2];
+$PASS = $_SERVER['argv'][3];
+
+// Attempt to connect to the FTP server
+$output = FTP($SERVER,$USER,$PASS);
+print $output;
+
+function FTP($server,$user,$pass){
+ 
+	$connection = ftp_connect($server,21,2);
+
+	if(ftp_login($connection,$user,$pass))
+	{
+		return "SUCCESS";
+	}
+	else
+	{
+		return "DENIED";
+	}
+   
+}
+
+?>

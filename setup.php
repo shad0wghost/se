@@ -1,7 +1,7 @@
 <?php
 
 	// Add system commands here that we need to check
-	$commands = array('dig', 'pwgen', 'smbclient');
+	$commands = array('dig', 'pwgen');
 
 	foreach ($commands as &$command) {
 		exec($command . ' --help 2>&1',$output,$status);

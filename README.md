@@ -1,4 +1,5 @@
 # SE:
+SE is a competition scoring engine used to judge weather or not service are up/down.
 ## To Install:
 Clone to `/var/www/html` and run `python install.py` 
 

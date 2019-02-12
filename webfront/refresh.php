@@ -37,7 +37,7 @@ $results = $DB->Get();
 <div class="row">
     <div class="block <?php echo $class ?>">
         <div class="block_center">
-            <?php echo $row['name'] . " - " . $row['poller'] . " - " . $row['hostname'] ?>
+            <?php echo $row['name'] . " - " . $row['hostname'] . ":" . $row['poller'] ?>
         </div>
     </div>
     <div class="block">

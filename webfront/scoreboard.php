@@ -114,12 +114,48 @@
 <body>
 <div id="wrapper"></div>
 <div id="wrapper2">
+<meta http-equiv="refresh" content="30">
+<?php
+/*
+echo "Here are our files";
+echo "";
+echo "\n";
+$path = "./injects";
+$dh = opendir($path);
+$i=1;
+while (($file = readdir($dh)) !== false) {
+    if($file != "." && $file != ".." && $file != "index.php" && $file != ".htaccess" && $file != "error_log" && $file != "cgi-bin") {
+        echo "<a href='$path/$file'>$file</a><br /><br />";
+        $i++;
+    }
+}
+closedir($dh);*/
+?>
+<?php
+echo "INJECTS:";
+echo "<br>";
+$files = array();
+$dir = opendir('./injects'); // open the cwd..also do an err check.
+while(false != ($file = readdir($dir))) {
+        if(($file != ".") and ($file != "..") and ($file != "index.php")) {
+                $files[] = $file; // put in array.
+        }   
+}
+
+natsort($files); // sort.
+
+// print.
+foreach($files as $file) {
+        echo("<a href='./injects/$file'>$file</a> <br />\n");
+}?>
+
+<br>
+<!--
     <div>
         <input type="button" id="score" value="Score!" />
     </div>
 </div>
-
 <div id="console"></div>
-
+-->
 </body>
 </html>

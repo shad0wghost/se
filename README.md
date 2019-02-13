@@ -21,25 +21,8 @@ In the linux terminal navigate to `/var/www/html/se/admin` and execute the tools
 
 `./teamadd.php Team1` -> `./serviceadd.php Team1 dns` -> `./serviceon.php 1`
 
-
-**Debuging Checks By the Pollers:**
-
-To get more information on how the pollers work navigate to `/var/www/html/se/pollers` and execute the tools via the command `php <toolname>` the debug output should give you enough to figure out what is needed. Open the script in a text editor and look at the arguemnts you need to pass to the pollers and take note of the order. 
-
-All tools requiere 3 arguments to be passed to the script. 
-
-**Example:** `php smb 127.0.0.1 administrator password` 
-
-Now login into phpmyadmin and input values for pollers in the order that they appear. Random entries will be generated for new pollers. This will need to be modified to get scores to work. 
-
 **Access PhpMyAdmin:**
 The install script pulls and sets up phpmyadmin located at `http://<ip>/phpmyadmin` 
-
-**Example Database config:**
-
-Database: `ccdc` Table: `services` 
-
-![alt text](https://github.com/shad0wghost/se/blob/master/DemoDB.png)
 
 **To Start Scoring:**
 To start the pollers run the start python script. Usage `python start.py <time in seconds>`
@@ -48,6 +31,16 @@ To start the pollers run the start python script. Usage `python start.py <time i
 
 **Adding an Inject:** 
 If you would like a white team to upload injects you can use the inject uploader tool located at `http://<ip>/addinject.php`.
+
+## Configuring Database:
+
+You will need to make some changes to the SQL database to match your environment. This is very easy with the use of PHPMyAdmin.
+
+Database: `ccdc` Table: `services` 
+
+**Example Database Config:**
+
+![alt text](https://github.com/shad0wghost/se/blob/master/DemoDB.png)
 
 ## Pollers:
 
@@ -70,5 +63,10 @@ If you would like a white team to upload injects you can use the inject uploader
   + Usage: `./smb <SMB Server> <SMB User> <SMB Password>`
 * SSH
   + Usage: `./ssh <SSH Server> <SSH User> <SSH Password>`
+  
+**Debuging Checks By the Pollers:**
 
+In the directory `/var/www/html/se/pollers` are where all the pollers live. You can execute them directly via the comand line with the argurmens listed above. Executing them directly provides valuable information on why a service may not be scoring.  
 
+**Example:** `php smb 127.0.0.1 administrator password` 
+ 

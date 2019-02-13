@@ -12,7 +12,7 @@ If you need more information on how the pollers work navigate to `/var/www/html/
 
 All tools requiere 3 arguments to be passed to the script. 
 
-Example: `php smb 127.0.0.1 administrator password`
+**Example:** `php smb 127.0.0.1 administrator password`
 
 **To Start Poller:**
 To start the poller run the start python script. Usage `python start.py <time in seconds>`

@@ -15,7 +15,13 @@ In a web browser navigate to `http://<IP>/se`
 ## To Administer:
 **Add a Service to Check:**
 
-In the linux terminal navigate to `/var/www/html/se/admin` and execute the tools with `php <toolname>`.
+In the linux terminal navigate to `/var/www/html/se/admin` and execute the tools with `php <toolname>`. Tool name are very self explanatory. Debug output will give you instructions. 
+
+**Standard Workflow:**
+
+`./teamadd.php Team1` -> `./serviceadd.php Team1 dns` -> `./serviceon.php 1`
+
+
 
 To get more information on how the pollers work navigate to `/var/www/html/se/pollers` and execute the tools via the command `php <toolname>` the debug output should give you enough to figure out what is needed. Open the script in a text editor and look at the arguemnts you need to pass to the pollers and take note of the order. 
 
@@ -23,10 +29,16 @@ All tools requiere 3 arguments to be passed to the script.
 
 **Example:** `php smb 127.0.0.1 administrator password` 
 
-Now login into phpmyadmin and input values for pollers in the order that they appear. Random entries will be generated for new pollers. This will need to be fixed to get scores to work. 
+Now login into phpmyadmin and input values for pollers in the order that they appear. Random entries will be generated for new pollers. This will need to be modified to get scores to work. 
 
 **Access PhpMyAdmin:**
-The install script pulls and sets up phpmyadmin located at `http://<ip>/phpmyadmin`
+The install script pulls and sets up phpmyadmin located at `http://<ip>/phpmyadmin` 
+
+**Example Database config:**
+
+Database: `ccdc` Table: `services` 
+
+![alt text](https://github.com/shad0wghost/se/blob/master/Demodb.png)
 
 **To Start Scoring:**
 To start the pollers run the start python script. Usage `python start.py <time in seconds>`

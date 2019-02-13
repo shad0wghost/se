@@ -28,6 +28,6 @@ To start the poller run the start python script. Usage `python start.py <time in
 **Example:** `python start.py 60` will run service checks every 60 seconds.
 
 **Adding an Inject:** 
-If you would like a white team to uplaod injects you can use the inject uploader tool located at `http://<ip>/addinject.php`.
+If you would like a white team to upload injects you can use the inject uploader tool located at `http://<ip>/addinject.php`.
 
 

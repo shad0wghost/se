@@ -1,14 +1,5 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
-<!--
-          (__)        vv    vv
-          (oo)        ||----||  *
-   /-------\/         ||     | /
-  / |     ||         /\-------/
- *  ||----||        (oo)
-    ^^    ^^        (  )
 
- American Cow   Australian Cow
--->
 <head>
     <!--jQuery library -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>

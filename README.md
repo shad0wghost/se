@@ -32,6 +32,9 @@ To start the pollers run the start python script. Usage `python start.py <time i
 **Adding an Inject:** 
 If you would like a white team to upload injects you can use the inject uploader tool located at `http://<ip>/addinject.php`.
 
+**Reset Scoreboard:**
+Use `reset-scoreboard.php` under `/var/www/html/se/admin` This will set `Attempts` and `Successful` to zero for all teams and services. 
+
 ## Configuring Database:
 
 You will need to make some changes to the SQL database to match your environment. This is very easy with the use of PHPMyAdmin.

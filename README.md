@@ -65,10 +65,10 @@ If you would like a white team to upload injects you can use the inject uploader
   + Usage: `./mysql <MySQL Server> <MySQL User> <MySQL Password>`
   + This looks for the STRING "ccdc" in the DATABASE "checkdb" from the TABLE "checktable" for the COLUMN "checkstring" 
 * POP3 
-  + Usage: `./pop3 <Pop3 Server> <Pop3 User> <Pop3 Password>
+  + Usage: `./pop3 <Pop3 Server> <Pop3 User> <Pop3 Password>`
 * SMB 
-  + Usage: `./smb <SMB Server> <SMB User> <SMB Password>
+  + Usage: `./smb <SMB Server> <SMB User> <SMB Password>`
 * SSH
-  + Usage: `./ssh <SSH Server> <SSH User> <SSH Password>
+  + Usage: `./ssh <SSH Server> <SSH User> <SSH Password>`
 
 

@@ -15,7 +15,7 @@ p = getpass.getpass()
 os.system("sed -i 's/.password.*$/" + '"'  + p + '"' + "\;/g' sql.php")
 os.system("""
 php setup.php
-os.system('sudo echo "5 * * * * root python /var/www/html/se/controller.php" >> /etc/crontab')
+os.system('sudo echo "5 * * * * root php /var/www/html/se/controller.php" >> /etc/crontab')
 echo '<meta http-equiv="refresh" content="0; url=/se/webfront/scoreboard.php" />' > /var/www/html/index.html
 echo "---------------------------"
 echo "---------------------------"

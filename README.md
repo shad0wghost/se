@@ -9,10 +9,13 @@ Clone to `/var/www/html` and run `python install.py`
 
 **WHEN PROMPTED** Selected `apache`
 
+## To Access: 
+In a web browser navigate to `http://<IP>/se`
+
 ## To Administer:
 **Add a Service to Check:**
 
-Navigate to `/var/www/html/se/admin` and execute the tools with `php <toolname>`.
+In the linux terminal navigate to `/var/www/html/se/admin` and execute the tools with `php <toolname>`.
 
 To get more information on how the pollers work navigate to `/var/www/html/se/pollers` and execute the tools via the command `php <toolname>` the debug output should give you enough to figure out what is needed. Open the script in a text editor and look at the arguemnts you need to pass to the pollers and take note of the order. 
 

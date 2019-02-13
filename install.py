@@ -5,14 +5,17 @@ import getpass
 #install
 os.system("""
 sudo apt-get update
-sudo apt-get install apache2 mysql-server php5 php5-mysql php5-curl pwgen dnsutils python curl smbclient phpmyadmin -y
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-python get-pip.py
-pip install paramiko
+sudo apt-get install apache2 mysql-server phpmyadmin -y
 """)
 print "Enter MySql Password"
 p = getpass.getpass()
 os.system("sed -i 's/.password.*$/" + '"'  + p + '"' + "\;/g' sql.php")
+os.system("""
+sudo apt-get install php5 php5-mysql php5-curl pwgen dnsutils python curl smbclient -y
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py
+pip install paramiko
+""")
 os.system("""
 chmod 777 /var/www/html/se/webfront/injects
 php setup.php

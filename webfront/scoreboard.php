@@ -137,7 +137,7 @@ echo "<br>";
 $files = array();
 $dir = opendir('./injects'); // open the cwd..also do an err check.
 while(false != ($file = readdir($dir))) {
-        if(($file != ".") and ($file != "..") and ($file != "index.php")) {
+        if(($file != ".") and ($file != "..") and ($file != "index.html")) {
                 $files[] = $file; // put in array.
         }   
 }

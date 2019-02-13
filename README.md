@@ -1,5 +1,5 @@
 # SE:
-SE is a competition scoring engine used to judge weather or not service are up/down.
+SE is a competition scoring engine used to judge whether or not services are up/down.
 ## To Install:
 Install apache2
 

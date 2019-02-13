@@ -53,13 +53,22 @@ If you would like a white team to upload injects you can use the inject uploader
 
 **The current pollers offerd are:**
 
-* DNS Usage: 
-* FTP Usage:
-* HTTP Usage:
-* HTTPS Usage:
-* MYSQL Usage:
-* POP3 Usage:
-* SMB Usage:
-* SSH Usage:
+* DNS 
+  + Usage: `./dns <DNS Server IP> <Domain> <Expected IP>`
+* FTP 
+  + Usage: `./ftp <FTP Server IP> <FTP User> <FTP Password>`
+* HTTP
+  + Usage: `./http <URL> <Directory> <Expected MD5 Hash>`
+* HTTPS 
+  + Usage: `./http <URL> <Directory> <Expected MD5 Hash>`
+* MYSQL 
+  + Usage: `./mysql <MySQL Server> <MySQL User> <MySQL Password>`
+  + This looks for the STRING "ccdc" in the DATABASE "checkdb" from the TABLE "checktable" for the COLUMN "checkstring" 
+* POP3 
+  + Usage: `./pop3 <Pop3 Server> <Pop3 User> <Pop3 Password>
+* SMB 
+  + Usage: `./smb <SMB Server> <SMB User> <SMB Password>
+* SSH
+  + Usage: `./ssh <SSH Server> <SSH User> <SSH Password>
 
 

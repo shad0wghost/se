@@ -1,9 +1,7 @@
 #!/usr/bin/php
 
 <?php
-// I highly suggest you set the mysql.connect_timeout to something
-// low, like 3, or this will hang for the default timeout (60 seconds)
-// if no mysql daemon is present on the target host
+//This script looks for the STRING "ccdc" in the DATABASE "checkdb" from the TABLE "checktable" for the COLUMN "checkstring" 
 
 $SERVER = $_SERVER['argv'][1];
 $USER = $_SERVER['argv'][2];

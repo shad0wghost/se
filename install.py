@@ -5,7 +5,7 @@ import getpass
 #install
 os.system("""
 sudo apt-get update
-sudo apt-get install apache2 mysql-server php5 php5-mysql php5-curl pwgen python curl smbclient phpmyadmin -y
+sudo apt-get install apache2 mysql-server php5 php5-mysql php5-curl pwgen dnsutils python curl smbclient phpmyadmin -y
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py
 pip install paramiko

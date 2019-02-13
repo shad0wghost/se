@@ -36,7 +36,7 @@ If you would like a white team to upload injects you can use the inject uploader
 
 You will need to make some changes to the SQL database to match your environment. This is very easy with the use of PHPMyAdmin.
 
-Database: `ccdc` Table: `services` 
+**Database:** `ccdc` **Table:** `services` 
 
 **Example Database Config:**
 

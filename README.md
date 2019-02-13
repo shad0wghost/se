@@ -1,5 +1,7 @@
 # SE:
 SE is a competition scoring engine used to judge whether or not services are up/down.
+![alt text](https://github.com/shad0wghost/se/blob/master/DemoImg.png)
+
 ## To Install:
 Install apache2
 

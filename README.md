@@ -22,7 +22,7 @@ In the linux terminal navigate to `/var/www/html/se/admin` and execute the tools
 `./teamadd.php Team1` -> `./serviceadd.php Team1 dns` -> `./serviceon.php 1`
 
 
-**Debuging Checks By the Pollers**
+**Debuging Checks By the Pollers:**
 
 To get more information on how the pollers work navigate to `/var/www/html/se/pollers` and execute the tools via the command `php <toolname>` the debug output should give you enough to figure out what is needed. Open the script in a text editor and look at the arguemnts you need to pass to the pollers and take note of the order. 
 

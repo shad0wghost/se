@@ -2,6 +2,7 @@
 SE is a competition scoring engine used to judge weather or not service are up/down.
 ## To Install:
 Install apache2
+
 Clone to `/var/www/html` and run `python install.py` 
 
 **WHEN PROMPTED** Selected `apache`

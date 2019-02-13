@@ -14,6 +14,11 @@ All tools requiere 3 arguments to be passed to the script.
 
 Example: `php smb 127.0.0.1 administrator password`
 
+**To Start Poller:**
+To start the poller run the start python script. Usage `python start.py <time in seconds>`
+
+**Example:** `python start.py 60` will run service checks every 60 seconds.
+
 **Adding an Inject:** 
 If you would like a white team to uplaod injects you can use the inject uploader tool located at `http://<ip>/addinject.php`.
 

@@ -81,6 +81,21 @@
         * html .clearfix {
             height: 1%;
         }
+        a:link
+        {
+        color:#FF0000;
+        }
+
+        a:visited
+        {
+        color:#FFFFFF;
+        }
+
+        a:hover
+        {
+        color:#00FDF5;
+        }
+
 
     </style>
     <title>Scoring Engine</title>

@@ -12,7 +12,7 @@ Clone to `/var/www/html` and run `python install.py`
 
 Navigate to `/var/www/html/se/admin` and execute the tools with `php <toolname>`.
 
-To get more information on how the pollers work navigate to `/var/www/html/se/pollers` and execute the tools via `php <toolname>` the debug output should give you enough to figure out what is needed. Look at the arguemnts you need to pass to the pollers and take note of the order. 
+To get more information on how the pollers work navigate to `/var/www/html/se/pollers` and execute the tools via the command `php <toolname>` the debug output should give you enough to figure out what is needed. Look at the arguemnts you need to pass to the pollers and take note of the order. 
 
 All tools requiere 3 arguments to be passed to the script. 
 

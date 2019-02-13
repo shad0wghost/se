@@ -14,6 +14,7 @@ print "Enter MySql Password"
 p = getpass.getpass()
 os.system("sed -i 's/.password.*$/" + '"'  + p + '"' + "\;/g' sql.php")
 os.system("""
+chmod 777 /var/www/html/se/webfront/injects
 php setup.php
 echo '<meta http-equiv="refresh" content="0; url=/se/webfront/scoreboard.php" />' > /var/www/html/index.html
 echo "---------------------------"

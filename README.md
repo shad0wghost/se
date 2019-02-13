@@ -39,7 +39,7 @@ The install script pulls and sets up phpmyadmin located at `http://<ip>/phpmyadm
 
 Database: `ccdc` Table: `services` 
 
-![alt text](https://github.com/shad0wghost/se/blob/master/Demodb.png)
+![alt text](https://github.com/shad0wghost/se/blob/master/DemoDB.png)
 
 **To Start Scoring:**
 To start the pollers run the start python script. Usage `python start.py <time in seconds>`

@@ -44,7 +44,7 @@ Database: `ccdc` Table: `services`
 
 ## Pollers:
 
-**The current pollers offerd are:**
+**The Current Pollers Offerd Are:**
 
 * DNS 
   + Usage: `./dns <DNS Server IP> <Domain> <Expected IP>`

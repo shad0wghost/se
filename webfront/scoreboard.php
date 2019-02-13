@@ -150,12 +150,12 @@ foreach($files as $file) {
 }?>
 
 <br>
-<!--
+
     <div>
         <input type="button" id="score" value="Score!" />
     </div>
 </div>
 <div id="console"></div>
--->
+
 </body>
 </html>

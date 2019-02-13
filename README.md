@@ -7,7 +7,7 @@ Install apache2
 
 Clone to `/var/www/html` and run `python install.py` 
 
-**WHEN PROMPTED** Selected `apache`
+**WHEN PROMPTED:** Select `apache`
 
 ## To Access: 
 In a web browser navigate to `http://<IP>/se`
@@ -21,12 +21,15 @@ To get more information on how the pollers work navigate to `/var/www/html/se/po
 
 All tools requiere 3 arguments to be passed to the script. 
 
-**Example:** `php smb 127.0.0.1 administrator password`
+**Example:** `php smb 127.0.0.1 administrator password` 
 
-Now login into phpmyadmin and input values for pollers in the order that they appear. Random entries will be generated for new players. This will need to be fixed to get scores to work.
+Now login into phpmyadmin and input values for pollers in the order that they appear. Random entries will be generated for new pollers. This will need to be fixed to get scores to work. 
 
-**To Start Poller:**
-To start the poller run the start python script. Usage `python start.py <time in seconds>`
+**Access PhpMyAdmin:**
+The install script pulls and sets up phpmyadmin located at `http://<ip>/phpmyadmin`
+
+**To Start Scoring:**
+To start the pollers run the start python script. Usage `python start.py <time in seconds>`
 
 **Example:** `python start.py 60` will run service checks every 60 seconds.
 

@@ -49,4 +49,17 @@ To start the pollers run the start python script. Usage `python start.py <time i
 **Adding an Inject:** 
 If you would like a white team to upload injects you can use the inject uploader tool located at `http://<ip>/addinject.php`.
 
+## Pollers:
+
+**The current pollers offerd are:**
+
+* DNS Usage: 
+* FTP Usage:
+* HTTP Usage:
+* HTTPS Usage:
+* MYSQL Usage:
+* POP3 Usage:
+* SMB Usage:
+* SSH Usage:
+
 

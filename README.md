@@ -10,7 +10,7 @@ Clone to `/var/www/html` and run `python install.py`
 **WHEN PROMPTED** Selected `apache`
 
 ## To Administer:
-**To Add a Service to Check**
+**Add a Service to Check:**
 
 Navigate to `/var/www/html/se/admin` and execute the tools with `php <toolname>`.
 

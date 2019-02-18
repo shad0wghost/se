@@ -72,4 +72,25 @@ You will need to make some changes to the SQL database to match your environment
 In the directory `/var/www/html/se/pollers` are where all the pollers live. You can execute them directly via the comand line with the argurmens listed above. Executing them directly provides valuable information on why a service may not be scoring.  
 
 **Example:** `php smb 127.0.0.1 administrator password` 
+
+## Incorporating More Than One User/Password Combination During the Service Checks:
+
+By default this engine only checks for one username and password combination based on the database fields `user` and `pass`. To add an additional challenge for your players and preform checks on more than one user preform the following:
+
+Create a text file in the diretory `/var/www/html/se/user-pass`. Take note of the file name. 
+
+I would recommend a name like `Team1SSH.txt` to note that this file is used for `Team1` for the service `SSH`. 
+
+This file's contents should be in the following format:
+```
+user1,password1
+user2,password2
+user3,password3
+```
+
+Now navigate to phpMyAdmin and load up the `services` table. There is a column called `user-pass-file`. In this field put the name of your Username/Password file. 
+
+For example, I would have put `Team1SSH.txt` in that field. 
+
+The Scoring Engine will now ignore the `user` and `pass` field during scoring and will randomly select a line in the password file you linked.
  

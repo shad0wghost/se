@@ -56,8 +56,8 @@
                 (`id` INT(10) NOT NULL AUTO_INCREMENT,
                 `name` varchar(10) NOT NULL,
                 `teamid` int(10) NOT NULL,
-				`poller` VARCHAR(25) NOT NULL,
-				`hostname` VARCHAR(10) NOT NULL,
+		`poller` VARCHAR(25) NOT NULL,
+		`hostname` VARCHAR(10) NOT NULL,
                 `attempts` INT(10) DEFAULT 0,
                 `success` INT(10) DEFAULT 0,
                 `lastcheck` INT(1) DEFAULT 0,
@@ -66,7 +66,7 @@
                 `host` VARCHAR(50) NOT NULL,
                 `user` VARCHAR(50),
                 `pass` VARCHAR(50),
-				`user-pass-file` VARCHAR(50) DEFAULT NULL,
+		`user-pass-file` VARCHAR(50) DEFAULT NULL,
                 PRIMARY KEY(id))";
 
     $result = $mysqli->query($query) or die($mysqli->error.__LINE__);

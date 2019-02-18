@@ -33,10 +33,39 @@ print "Poller Path: $basedir" . $newline;
 
 foreach ($activeservices as $row)
 {
-    $exec = ".$pollerdir" . $row['poller'] . " " . $row['host'] . " " . $row['user'] . " " . $row['pass'];
-    echo $exec . " ";
-    $status = exec($exec);
-    //echo $status;
+    $passFile = $row['user-pass-file'];
+    if($passFile == NULL)
+    {
+        $exec = ".$pollerdir" . $row['poller'] . " " . $row['host'] . " " . $row['user'] . " " . $row['pass'];
+        echo $exec . " ";
+        $status = exec($exec);
+        //echo $status;
+    }    
+    else{
+        $file = "/var/www/html/se/user-pass/" . $passFile;
+        // Convert the text fle into array and get text of each line in each array index
+        $file_arr = file($file);
+        // Total number of linesin file
+        $num_lines = count($file_arr);
+        // Getting the last array index number by subtracting 1 as the array index starts from 0
+        $last_arr_index = $num_lines - 1;
+        // Random index number
+        $rand_index = rand(0, $last_arr_index);
+        // random text from a line. The line will be a random number within the indexes of the array
+        $rand_text = $file_arr[$rand_index];
+       // echo $rand_text;
+        $userAndPasswordArray = explode(',', $rand_text);
+       // print_r($userAndPasswordArray);
+       // echo $userAndPasswordArray[0];
+       // echo " ";
+       // echo $userAndPasswordArray[1];
+
+        $exec = ".$pollerdir" . $row['poller'] . " " . $row['host'] . " " . $userAndPasswordArray[0] . " " . $userAndPasswordArray[1];
+        echo $exec . " ";
+        $status = exec($exec);
+        //echo $status;
+    }
+    
     if(trim($status) == "SUCCESS")
     {
         echo trim($status) . $newline;

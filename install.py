@@ -18,6 +18,7 @@ pip install paramiko
 """)
 os.system("""
 chmod 777 /var/www/html/se/webfront/injects
+chmod +x /var/www/html/se/pollers/*
 php setup.php
 echo '<meta http-equiv="refresh" content="0; url=/se/webfront/scoreboard.php" />' > /var/www/html/index.html
 echo "---------------------------"

@@ -10,7 +10,7 @@ $DB = new DB($config);
 $DB->Query("SELECT * from services WHERE active = 1 ORDER BY `name`,`poller`");
 $results = $DB->Get();
 ?>
-<div class="heading">Cal Poly Pomona CCDC Scoring Engine v. 2.01<br> <?php echo date("F j, Y, g:i:s a");?></div>
+<div class="heading">Cal Poly Pomona CCDC Scoring Engine v. 2.50<br> <?php echo date("F j, Y, g:i:s a");?></div>
 <div class="row">
     <div class="block">
         <div class="block_center">Service</div>
